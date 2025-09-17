@@ -103,6 +103,48 @@ img{
     text-align: left;
 }
 
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: calc(4px + 1vw);
+    background: #fff;
+    border-radius: calc(2px + 1vw);
+    border: 2px solid #f5abb9;
+}
+
+.calc-row {
+    display: flex;
+    align-items: center;
+    gap: calc(1px + 1vw);
+}
+
+.calc-row label {
+    min-width: 120px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.calculator input {
+    flex: 1;
+    padding: .5vw;
+    border: 2px solid #f5abb9;
+    border-radius: 10%;
+    text-align: center;
+    background: #fff;
+}
+
+.calculator button {
+    flex: 1 1 10vw;
+    padding: 1vw 0;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    background: #f5abb9;
+    font-weight: 700;
+}
+.calculator button:hover { background: #ffc8d4; transform: translateY(-1px); }
+.calculator button:active { transform: translateY(0); }
+
 /*Below this line is mobile design */
 @media screen and (max-width: 800px){
     #container{
