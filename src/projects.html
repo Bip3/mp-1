@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Natalie's Projects</h1>
+    </header>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="cats.html">cats!</a></li>
+                <li><a href="fun.html">fun!</a></li>
+                <li><a href="projects.html">projects</a></li>
+            </ul>
+
+        </nav>
+        <main>
+            <section class="edu-entry">
+                <h2>JavaScript Calculator</h2>
+                <p>Enter two numbers and choose an operation:</p>
+
+                <div class="calculator" aria-label="Calculator">
+                    <div class="calc-row">
+                        <label for="one">First number</label>
+                        <input id="one" type="text" inputmode="decimal" placeholder="1st number">
+                    </div>
+
+                    <div class="calc-row">
+                        <label for="two">Second number</label>
+                        <input id="two" type="text" inputmode="decimal" placeholder="2nd number">
+                    </div>
+
+                    <div class="calc-row">
+                        <button onclick="doAdd()">+</button>
+                        <button onclick="doSubtract()">-</button>
+                        <button onclick="doMult()">*</button>
+                        <button onclick="doDiv()">/</button>
+                        <button onclick="doPow()">**</button>
+                        <button onclick="doClear()">Clear</button>
+                    </div>
+
+                    <h3 id="output" aria-live="polite"></h3>
+                </div>
+            </section>
+
+            <section class="edu-entry">
+                <h3>Boston Budget Project</h3>
+                <a href="https://github.com/rowanwhelan/Boston-Budget-Project">Github</a>
+                <ul>
+                    <li>Engineered ML models to analyze Boston’s budget vs. other cities through gradient boosting.</li>
+                    <li>Scraped/cleaned datasets using BeautifulSoup and Pandas, significantly reducing manual effort</li>
+                </ul>
+            </section>
+            <section class="edu-entry">
+                <h3>Hungryhub</h3>
+                <a href="https://github.com/Bip3/CS411Proj">Github</a>
+                <ul>
+                    <li>Led a 4-person team to build a full-stack app aggregating restaurant reviews and Spotify playlists</li>
+                    <li>Followed agile methodology</li>
+                    <li>Designed SQL database and react frontend</li>
+                </ul>
+            </section>
+            <section class="edu-entry">
+                <h3>Insert Title Text Here</h3>
+                <a href="https://github.com/Bip3/InsertTitleTextHere-LudumDare45">Github</a>
+                <ul>
+                    <li>Competed in a 48 hour game jam, with the game theme being announced at contest start</li>
+                    <li>Created all game assets including code, sound, artwork, and animations</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p> All rights reserved &copy;</p>
+    </footer>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
